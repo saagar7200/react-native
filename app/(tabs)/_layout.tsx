@@ -12,7 +12,8 @@ export default function TabLayout() {
     >
       <Tabs.Screen name="index" 
       options={{
-        headerShown: false, 
+        headerShown: true, 
+        headerTitleAlign: 'center',
         title: 'Home', 
         tabBarIcon: ({ color, focused, size }) => (
           <Ionicons name={focused ? "home-sharp" : "home-outline"} size={size} color={color} />
@@ -23,7 +24,7 @@ export default function TabLayout() {
         headerShown: false,
         title: 'About', 
         tabBarIcon: ({ color, focused, size }) => (
-          <Ionicons name={focused ? "information-circle-sharp" : "information-circle-outline"} size={size} color={color}  />
+          <Ionicons name={focused ? "information-circle-sharp" : "information-circle-outline"} size={size} color={color} />
         )
         }} />
     </Tabs>
