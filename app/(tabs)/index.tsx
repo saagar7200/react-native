@@ -6,7 +6,7 @@ export default function Index() {
     <View style={styles.container}>
       <Text style={styles.text}>Home screen</Text>
       <Link href={"/about"} style={styles.button}>
-        Go to About screen
+        About Us
       </Link>
     </View>
   );
@@ -35,6 +35,8 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     padding:15, 
     marginTop:'auto',
-    marginBottom:'auto'
+    marginBottom:'auto',
+    textAlign:'center',
+    minWidth:'40%'
   },
 });
